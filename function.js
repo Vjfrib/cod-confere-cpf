@@ -1,6 +1,6 @@
-export check
 
-function check (range, cpfArray) {
+
+export function check (range, cpfArray) {
   //Atribui a multiplicação
 for (let i = 0; i < range; i++) {
   cpfArray[i] *= (i+1);
