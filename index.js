@@ -1,30 +1,17 @@
 //cálculo de validação do cpf
+
+//laço de validação dos numeros
 do
   var cpf = prompt("Digite seu CPF");
   while ( len(cpf) != 11 && )
 
-var cpfArray = cpf.split("").map(Number);
-//divide a string e transfforma em números 
+/*fazer um array receber a var para
+podermos iterar e trabalhar*/
 
-for (let i = 0; i < 9; i++) {
-  cpfArray[i] *= (i+1);
-}
+//divide a string e transforma em números 
+var numeros = cpf.split("").map(Number);
 
-alert(cpfArray.join(","));
 
-var somatorio = 0;
-for (let i = 0; i < 9; i++) {
-  somatorio += cpfArray[i];
-}
+check (9, numeros)
+check (10, numeros)
 
-var digito = 0;
-digito = somatorio % 11;
-
-if (digito === 10) {
-  digito = 0;
-}
-
-digito = parseInt(digito);
-alert("primeiro digito: " + digito)
-
-alert(cpfArray);
