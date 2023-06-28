@@ -28,4 +28,5 @@ alert("primeiro digito: " + digito)
 
 //faz o envio
 cpfArray[range] = digito
+alert(cpfArray)
 }
