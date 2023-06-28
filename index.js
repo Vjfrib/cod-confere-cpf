@@ -15,3 +15,10 @@ var numeros = cpf.split("").map(Number);
 check (9, numeros)
 check (10, numeros)
 
+var original = cpf.split("").map(Number);
+
+if (original == numeros){
+  alert("Válido")
+}else {
+  alert("Inválido")
+}
